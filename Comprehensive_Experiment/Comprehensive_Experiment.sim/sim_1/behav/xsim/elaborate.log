@@ -1,0 +1,53 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 58f7a85fa3f344d8ba0d53ba3474df08 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Hazard
+Compiling module xil_defaultlib.PC_SEL_MUX
+Compiling module xil_defaultlib.TWO_BITS_FSM
+Compiling module xil_defaultlib.LOCAL_PREDICTION
+Compiling module xil_defaultlib.GLOBAL_PREDICTION
+Compiling module xil_defaultlib.COMPETITION_FSM
+Compiling module xil_defaultlib.PREDICT_COMPETITION
+Compiling module xil_defaultlib.BTB
+Compiling module xil_defaultlib.BRANCH_PREDICTION
+Compiling module xil_defaultlib.ADD
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.Register
+Compiling module xil_defaultlib.Register(WIDTH=5)
+Compiling module xil_defaultlib.Register(WIDTH=1)
+Compiling module xil_defaultlib.Register(WIDTH=2)
+Compiling module xil_defaultlib.Register(WIDTH=3)
+Compiling module xil_defaultlib.Register(WIDTH=4)
+Compiling module xil_defaultlib.SEG_REG
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.Immediate
+Compiling module xil_defaultlib.CTRL
+Compiling module xil_defaultlib.AND
+Compiling module xil_defaultlib.Mux1
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Branch
+Compiling module xil_defaultlib.Encoder
+Compiling module xil_defaultlib.PC_SEL_GEN
+Compiling module xil_defaultlib.Branch_Predict_Update
+Compiling module xil_defaultlib.Branch_Default
+Compiling module xil_defaultlib.Mux2
+Compiling module xil_defaultlib.Check_Data_SEL
+Compiling module xil_defaultlib.Check_Data_SEL_HZD
+Compiling module xil_defaultlib.Check_Data_SEG_SEL
+Compiling module xil_defaultlib.Branch_Predict_Analyze
+Compiling module xil_defaultlib.CPU
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.ROM
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.DPRAM
+Compiling module xil_defaultlib.Data_Mem
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.CPU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_tb_behav

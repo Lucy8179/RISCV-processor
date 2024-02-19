@@ -1,0 +1,39 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"CPU_tb_time_synth.v" \
+"../../../../../../CPU_Pipeline_source_code/ADD.v" \
+"../../../../../../CPU_Pipeline_source_code/ALU.v" \
+"../../../../../../CPU_Pipeline_source_code/AND.v" \
+"../../../../../../Branch_Prediction_source_code/BRANCH_PREDICTION.v" \
+"../../../../../../Branch_Prediction_source_code/BTB.v" \
+"../../../../../../CPU_Pipeline_source_code/Branch.v" \
+"../../../../../../CPU_Pipeline_source_code/Branch_Default.v" \
+"../../../../../../CPU_Pipeline_source_code/Branch_Predict_Analyze.v" \
+"../../../../../../CPU_Pipeline_source_code/Branch_Predict_Update.v" \
+"../../../../../../Branch_Prediction_source_code/COMPETITION_FSM.v" \
+"../../../../../../CPU_Pipeline_source_code/CPU.v" \
+"../../../../../../CPU_Pipeline_source_code/CTRL.v" \
+"../../../../../../CPU_Pipeline_source_code/Check_Data_SEG_SEL.v" \
+"../../../../../../CPU_Pipeline_source_code/Check_Data_SEL.v" \
+"../../../../../../CPU_Pipeline_source_code/Check_Data_SEL_HZD.v" \
+"../../../../../../CPU_Pipeline_source_code/Data_Mem.v" \
+"../../../../../../CPU_Pipeline_source_code/Encoder.v" \
+"../../../../../../Branch_Prediction_source_code/GLOBAL_PREDICTION.v" \
+"../../../../../../CPU_Pipeline_source_code/Hazard.v" \
+"../../../../../../CPU_Pipeline_source_code/Immediate.v" \
+"../../../../../../Branch_Prediction_source_code/LOCAL_PREDICTION.v" \
+"../../../../../../CPU_Pipeline_source_code/MEM.v" \
+"../../../../../../CPU_Pipeline_source_code/Mux1.v" \
+"../../../../../../CPU_Pipeline_source_code/Mux2.v" \
+"../../../../../../CPU_Pipeline_source_code/PC.v" \
+"../../../../../../CPU_Pipeline_source_code/PC_SEL_GEN.v" \
+"../../../../../../CPU_Pipeline_source_code/PC_SEL_MUX.v" \
+"../../../../../../Branch_Prediction_source_code/PREDICT_COMPETITION.v" \
+"../../../../../../CPU_Pipeline_source_code/RF.v" \
+"../../../../../../CPU_Pipeline_source_code/Register.v" \
+"../../../../../../CPU_Pipeline_source_code/SEG_REG.v" \
+"../../../../../../Branch_Prediction_source_code/TWO_BITS_FSM.v" \
+"../../../../../../CPU_Pipeline_source_code/CPU_tb.v" \
+
+# Do not sort compile order
+nosort

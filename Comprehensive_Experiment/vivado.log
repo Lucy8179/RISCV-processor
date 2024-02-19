@@ -1,0 +1,260 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jun  9 09:59:21 2023
+# Process ID: 12272
+# Current directory: C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21776 C:\Users\86189\Desktop\cod_exp\exp6\Comprehensive_Experiment\Comprehensive_Experiment.xpr
+# Log file: C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/vivado.log
+# Journal file: C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.srcs/sources_1/ip/DPRAM/DPRAM.xci' is already up-to-date
+[Fri Jun  9 10:00:31 2023] Launched synth_1...
+Run output will be captured here: C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.runs/synth_1/runme.log
+[Fri Jun  9 10:00:31 2023] Launched impl_1...
+Run output will be captured here: C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.srcs/sources_1/ip/ROM/ROM.dcp' for cell 'memory/inst_mem'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.srcs/sources_1/ip/DPRAM/DPRAM.dcp' for cell 'memory/data_mem/data_mem'
+INFO: [Netlist 29-17] Analyzing 1347 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/constrains.xdc]
+Finished Parsing XDC File [C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/constrains.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1156.359 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 105 instances were transformed.
+  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 64 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 18 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 19 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 4 instances
+
+open_run: Time (s): cpu = 00:00:49 ; elapsed = 00:00:24 . Memory (MB): peak = 1272.539 ; gain = 450.047
+set_property -dict [list CONFIG.coefficient_file {C:/Users/86189/Desktop/cod_exp/exp6/Matrix_coe/matrix_text.coe}] [get_ips ROM]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/86189/Desktop/cod_exp/exp6/Matrix_coe/matrix_text.coe' provided. It will be converted relative to IP Instance files '../../../../../Matrix_coe/matrix_text.coe'
+generate_target all [get_files  C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.srcs/sources_1/ip/ROM/ROM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ROM'...
+catch { config_ip_cache -export [get_ips -all ROM] }
+export_ip_user_files -of_objects [get_files C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.srcs/sources_1/ip/ROM/ROM.xci] -no_script -sync -force -quiet
+reset_run ROM_synth_1
+launch_runs -jobs 8 ROM_synth_1
+[Fri Jun  9 10:27:19 2023] Launched ROM_synth_1...
+Run output will be captured here: C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.runs/ROM_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.srcs/sources_1/ip/ROM/ROM.xci] -directory C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.ip_user_files -ipstatic_source_dir C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.cache/compile_simlib/modelsim} {questa=C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.cache/compile_simlib/questa} {riviera=C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.cache/compile_simlib/riviera} {activehdl=C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.coefficient_file {C:/Users/86189/Desktop/cod_exp/exp6/Matrix_coe/matrix_data.coe}] [get_ips DPRAM]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/86189/Desktop/cod_exp/exp6/Matrix_coe/matrix_data.coe' provided. It will be converted relative to IP Instance files '../../../../../Matrix_coe/matrix_data.coe'
+generate_target all [get_files  C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.srcs/sources_1/ip/DPRAM/DPRAM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'DPRAM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'DPRAM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'DPRAM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'DPRAM'...
+catch { config_ip_cache -export [get_ips -all DPRAM] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DPRAM, cache-ID = 0b1539f8b5c76b88; cache size = 1.721 MB.
+export_ip_user_files -of_objects [get_files C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.srcs/sources_1/ip/DPRAM/DPRAM.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.srcs/sources_1/ip/DPRAM/DPRAM.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.srcs/sources_1/ip/DPRAM/DPRAM.xci'
+export_simulation -of_objects [get_files C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.srcs/sources_1/ip/DPRAM/DPRAM.xci] -directory C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.ip_user_files -ipstatic_source_dir C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.cache/compile_simlib/modelsim} {questa=C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.cache/compile_simlib/questa} {riviera=C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.cache/compile_simlib/riviera} {activehdl=C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.srcs/sources_1/ip/DPRAM/DPRAM.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jun  9 10:33:26 2023] Launched synth_1...
+Run output will be captured here: C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.runs/synth_1/runme.log
+[Fri Jun  9 10:33:26 2023] Launched impl_1...
+Run output will be captured here: C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.runs/impl_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vivado/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.sim/sim_1/behav/xsim/DPRAM.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.sim/sim_1/behav/xsim/matrix_data.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.sim/sim_1/behav/xsim/ROM.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.sim/sim_1/behav/xsim/matrix_text.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.sim/sim_1/behav/xsim/pipeline_test.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.sim/sim_1/behav/xsim/data.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.sim/sim_1/behav/xsim/control_test.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.sim/sim_1/behav/xsim/load_use.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.sim/sim_1/behav/xsim/inst_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.srcs/sources_1/ip/DPRAM/sim/DPRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.srcs/sources_1/ip/ROM/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/ADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/AND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/Branch_Prediction_source_code/BRANCH_PREDICTION.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRANCH_PREDICTION
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/Branch_Prediction_source_code/BTB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BTB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/Branch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/Branch_Default.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch_Default
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/Branch_Predict_Analyze.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch_Predict_Analyze
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/Branch_Predict_Update.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch_Predict_Update
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/CTRL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CTRL
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/Check_Data_SEG_SEL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Check_Data_SEG_SEL
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/Check_Data_SEL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Check_Data_SEL
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/Check_Data_SEL_HZD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Check_Data_SEL_HZD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/Data_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/Encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/Branch_Prediction_source_code/GLOBAL_PREDICTION.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GLOBAL_PREDICTION
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/Hazard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Hazard
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/Immediate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/Branch_Prediction_source_code/LOCAL_PREDICTION.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LOCAL_PREDICTION
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/Mux1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/Mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/PC_SEL_GEN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_SEL_GEN
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/PC_SEL_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_SEL_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/Branch_Prediction_source_code/PREDICT_COMPETITION.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PREDICT_COMPETITION
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/RF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/SEG_REG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SEG_REG
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/Branch_Prediction_source_code/TWO_BITS_FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TWO_BITS_FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86189/Desktop/cod_exp/exp6/CPU_Pipeline_source_code/CPU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.sim/sim_1/behav/xsim'
+"xelab -wto 58f7a85fa3f344d8ba0d53ba3474df08 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 58f7a85fa3f344d8ba0d53ba3474df08 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Hazard
+Compiling module xil_defaultlib.PC_SEL_MUX
+Compiling module xil_defaultlib.TWO_BITS_FSM
+Compiling module xil_defaultlib.LOCAL_PREDICTION
+Compiling module xil_defaultlib.GLOBAL_PREDICTION
+Compiling module xil_defaultlib.PREDICT_COMPETITION
+Compiling module xil_defaultlib.BTB
+Compiling module xil_defaultlib.BRANCH_PREDICTION
+Compiling module xil_defaultlib.ADD
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.Register
+Compiling module xil_defaultlib.Register(WIDTH=5)
+Compiling module xil_defaultlib.Register(WIDTH=1)
+Compiling module xil_defaultlib.Register(WIDTH=2)
+Compiling module xil_defaultlib.Register(WIDTH=3)
+Compiling module xil_defaultlib.Register(WIDTH=4)
+Compiling module xil_defaultlib.SEG_REG
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.Immediate
+Compiling module xil_defaultlib.CTRL
+Compiling module xil_defaultlib.AND
+Compiling module xil_defaultlib.Mux1
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Branch
+Compiling module xil_defaultlib.Encoder
+Compiling module xil_defaultlib.PC_SEL_GEN
+Compiling module xil_defaultlib.Branch_Predict_Update
+Compiling module xil_defaultlib.Branch_Default
+Compiling module xil_defaultlib.Mux2
+Compiling module xil_defaultlib.Check_Data_SEL
+Compiling module xil_defaultlib.Check_Data_SEL_HZD
+Compiling module xil_defaultlib.Check_Data_SEG_SEL
+Compiling module xil_defaultlib.Branch_Predict_Analyze
+Compiling module xil_defaultlib.CPU
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.ROM
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.DPRAM
+Compiling module xil_defaultlib.Data_Mem
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.CPU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_tb_behav -key {Behavioral:sim_1:Functional:CPU_tb} -tclbatch {CPU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source CPU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: Too many words specified in data file DPRAM.mif
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 2116.992 ; gain = 0.000
+run all
+WARNING: [Simulator 45-29] Cannot open source file /wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v: file does not exist.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  9 11:27:36 2023...

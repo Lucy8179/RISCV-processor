@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Jun 13 20:22:12 2023
+# Process ID: 6088
+# Current directory: C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.sim/sim_1/behav/xsim/xsim.dir/CPU_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/86189/Desktop/cod_exp/exp6/Comprehensive_Experiment/Comprehensive_Experiment.sim/sim_1/behav/xsim/xsim.dir/CPU_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 79.910 ; gain = 13.211
+INFO: [Common 17-206] Exiting Webtalk at Tue Jun 13 20:22:17 2023...
